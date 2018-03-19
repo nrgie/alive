@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="blue">#ff9f001b</color>
+    <color name="darker_blue">#dd9f001b</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+
+    <!-- Material Light_Blue Primary -->
+    <color name="color_light_blue_500">#4364b8</color>
+    <color name="color_light_blue_100">#b9e1f8</color>
+    <color name="color_light_blue_700">#436998</color>
+
+    <!-- Material Orange Accent -->
+    <color name="color_orange_A200">#ff9800</color>
+    <color name="color_orange_A100">#ffd180</color>
+    <color name="color_orange_A400">#ff9100</color>
+
+    <color name="primary_color">#9f001b</color>
+    <color name="primary_color_light">@color/color_light_blue_100</color>
+    <color name="primary_color_dark">#9f001b</color>
+
+    <color name="accent_color">#b1120b</color>
+    <color name="accent_color_light">@color/color_orange_A100</color>
+    <color name="accent_color_dark">@color/color_orange_A400</color>
+
+    <!-- Drawer Article Color -->
+    <color name="color_apps">#9f001b</color>
+    <color name="color_sales">#FF5722</color>
+    <color name="color_blog">#4caf50</color>
+    <color name="color_bookmark">#FFC107</color>
+    <color name="color_community">#F44336</color>
+
+    <!-- Text Colors -->
+    <color name="divider">#0277BD</color>
+    <color name="hints">#b8b8b8</color>
+    <color name="secondary">#727272</color>
+    <!--<color name="text">#212121</color>-->
+
+    <color name="primary_text_dark">#323232</color>
+    <color name="primary_text_light">#727272</color>
+
+
+    <!-- Google Brand Colors -->
+    <color name="google_red">#dd4b39</color>
+    <color name="google_white">#ffffff</color>
+    <color name="google_text_disabled">#737373</color>
+    <color name="google_text">#ffffff</color>
+
+    <color name="refresh_progress_1">@color/accent_color_light</color>
+    <color name="refresh_progress_2">@color/accent_color_dark</color>
+    <color name="refresh_progress_3">@color/primary_color</color>
+    
+    <color name="color_indicator_background">@android:color/white</color>
+
+    <color name="color_review">@color/color_footer_button_save_state_normal</color>
+
+    <color name="text_light">#66000000</color>
+
+    <!-- default text color for buttons -->
+    <color name="color_button_text">#27998C</color>
+    <!-- default text color for previous button in footer -->
+    <color name="color_footer_button_previous_text">#8d9b99</color>
+
+    <!-- selectors for background color for save button in footer (buildversion < 21) -->
+    <color name="color_footer_button_save_state_pressed">#9027998C</color>
+    <color name="color_footer_button_save_state_focused">#5bcfc2</color>
+    <color name="color_footer_button_save_state_normal">@color/color_button_text</color>
+    <color name="step_pager_previous_tab_color">#b1120b</color>
+    <color name="step_pager_selected_tab_color">#e02d2d</color>
+    <color name="step_pager_selected_last_tab_color">#ff669900</color>
+    <color name="step_pager_next_tab_color">#30000000</color>
+
+    <color name="test">#221224</color>
+    <color name="defaultContentColor">@android:color/black</color>
+    <color name="defaultBorderFlagColor">@android:color/transparent</color>
+
+    <!--<color name="background">#111111</color>-->
+
+    <!--<color name="switcher_background">#000000</color>-->
+
+    <color name="lightBlue">#7CE1FF</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray_70">#CCCCCC</color>
+    <color name="orange">#f48120</color>
+    <color name="pink">#db81b4</color>
+
+    <color name="btn_cancel_color">#999999</color>
+    <color name="btn_confirm_color">#303F9F</color>
+
+    <color name="ActiveGreen">#ff20da9c</color>
+    <color name="BlueDeep">#ff14566a</color>
+    <color name="BlueDeep50pc">#7714566a</color>
+    <color name="BlueDeepLight">#ff327c92</color>
+    <color name="BlueGrey">#ffd4e1e4</color>
+    <color name="BlueLagoon">#ff26bae8</color>
+    <color name="BlueSky">#ff78d0e9</color>
+    <color name="BlueWhale">#ff97c6d4</color>
+    <color name="BlueWhaleLight">#ffa9d0db</color>
+    <color name="BrightGreen">#ff7ae16e</color>
+
+    <color name="blue_bg">@color/BlueWhale</color>
+    <color name="blue_status">#ff307b92</color>
+
+    <color name="sep_gray">#ffe6e6e6</color>
+    <color name="setting_bg">@color/white</color>
+    <color name="setting_key">@color/Dark</color>
+    <color name="setting_key_disabled">@color/PassiveGrey</color>
+    <color name="setting_value">@color/Light</color>
+    <color name="setting_value_disabled">@color/PassiveGrey</color>
+    <color name="settings_bg_note">#ffd0e5eb</color>
+    <color name="settings_bg_titles">#ff93c4d3</color>
+    <color name="settings_text_color">#ff415055</color>
+    <color name="CoolGrey">#ffbec7cc</color>
+    <color name="Dark">#ff4c4c4c</color>
+    <color name="DarkBlue">#ff2e3741</color>
+    <color name="DarkBlueAlt">#ff29313b</color>
+    <color name="DarkInv">#ffdddddd</color>
+    <color name="DarkShade">#ff1a2128</color>
+    <color name="DarkShadeAlt">#ff171d22</color>
+    <color name="ElectricBlue">#ff1dc4ff</color>
+    <color name="FacebookBlue">#ff3464a5</color>
+    <color name="GrayTimerColor">#ff383838</color>
+    <color name="Grey">#ff505456</color>
+    <color name="HazyBlue">#fff4fafb</color>
+    <color name="KaminoBlue">#ff00b6ea</color>
+
+    <color name="PassiveGrey">#ffebebeb</color>
+    <color name="PetrolBlue">#ff54676f</color>
+
+    <color name="Light">#ff717171</color>
+    <color name="LightHalf">#ffa5a5a5</color>
+    <color name="LightInv">#ffaaaaaa</color>
+    <color name="LightShade">#ff1a2128</color>
+    <color name="LinkedinBlue">#ff0076b7</color>
+    <color name="LiveGreen">#ff67bf5e</color>
+    <color name="MediumGrey">#ffbfbfbf</color>
+
+    <color name="option_pressed">#e9e4e4</color>
+    <color name="option_text_pressed">#000000</color>
+    <color name="option_text">#080808</color>
+    
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/color_apps"
+    android:elevation="4dp"
+    android:layout_height="30dp">
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:text=""
+    android:layout_centerVertical="true"
+    android:textAllCaps="true"
+    android:textColor="@color/white"
+    android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/editrow"
+        android:layout_toRightOf="@+id/listrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_mode_edit_white_24dp"
+        />
+
+</RelativeLayout>

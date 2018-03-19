@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WizardPageContainer"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!--
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_margin"
+        android:elevation="@dimen/cardview_default_elevation">
+
+
+         -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:focusableInTouchMode="true"
+        android:paddingTop="5dp">
+
+        <TextView
+            style="@style/WizardPageTitle"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="@string/label_basic"
+            android:textAllCaps="true" />
+
+        <TextView
+            style="@style/WizardPageTitle"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="@string/sublabel_basic"
+            android:textColor="@color/grey_title"
+            android:textSize="12sp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/avatarpic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/avatar" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/e1w"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:layout_toRightOf="@+id/avatarpic">
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:hint="@string/name1"
+                            android:inputType="text"
+                            android:textColor="#313131"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            app:testType="personName" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/e1w"
+                        android:layout_toRightOf="@+id/avatarpic">
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:hint="@string/name2"
+                            android:inputType="text"
+                            android:textColor="#313131"
+                            app:testType="personName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/phoneccp"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/buttonredborder"
+                        android:gravity="center_vertical"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_textSize="18sp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/phoneccp"
+                        android:animateLayoutChanges="false">
+
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/myphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/myphone"
+                            android:inputType="number"
+                            android:textColor="#313131" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/e2w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textAllCaps="false"
+                        android:textColor="#313131"
+                        app:testType="email" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/e5w"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/password"
+                        android:inputType="textVisiblePassword"
+                        android:textAllCaps="false"
+                        android:textColor="#313131"
+                        app:testType="alphaNumeric"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nationallabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/national"
+                        android:textColor="@color/grey_title" />
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonredborder"
+                        app:ccp_showNameCode="true"
+                        app:ccp_showPhoneCode="false"
+                        app:ccp_textSize="18sp" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/bday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="@string/bday"
+                        android:textColor="#313131" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/gender"
+                        android:textColor="@color/grey_title" />
+
+                     <com.blueobject.app.alive.ui.Slide
+                         android:id="@+id/gender"
+                         android:layout_width="100dp"
+                         android:layout_height="50dp"
+                         />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+</android.support.v4.widget.NestedScrollView>

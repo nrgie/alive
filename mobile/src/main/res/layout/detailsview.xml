@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsViewMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/settingsViewIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/settingsGutter"
+        android:adjustViewBounds="true"
+        android:gravity="center_vertical"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/settingsViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/settingsGutter"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/settingsViewIcon"
+        android:gravity="center|left"
+        android:minHeight="52dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/settingsGutter"
+        android:paddingTop="@dimen/settingsGutter">
+
+        <TextView
+            android:id="@+id/settingsViewKey"
+            style="@style/settingsText"
+            android:text="Title"
+            android:textColor="@color/color_apps"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+             <!--
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_apps"
+                android:visibility="gone"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="false"
+                app:ccp_textSize="13sp">
+
+            </com.hbb20.CountryCodePicker>
+            -->
+
+            <TextView
+                android:id="@+id/settingsViewValue"
+                style="@style/settingsSubText"
+                android:text="Value"
+                android:textColor="@color/color_apps" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/settingsViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        >
+
+        <!--
+        <com.blueobject.app.alive.ui.SmoothCheckBox
+            android:id="@+id/onOff"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        -->
+
+
+
+            <TextView
+                android:id="@+id/ddnext"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:gravity="center_vertical|center"
+                android:padding="0dp"
+                android:text=">"
+                android:textColor="@color/color_apps"
+                android:textScaleX="0.5"
+                android:textSize="24sp" />
+
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/settingsViewSeparator"
+        style="@style/settingsSeparator"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@color/PassiveGrey"
+        android:layout_alignBottom="@id/settingsViewText" />
+
+</RelativeLayout>

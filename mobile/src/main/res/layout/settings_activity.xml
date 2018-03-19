@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_apps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/reddiagonal"
+        android:elevation="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dip"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <TextView
+            android:id="@+id/lblLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settingstitle"
+            android:textColor="@color/white"
+            android:textSize="24.0sp" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12.0dip"
+            android:src="@drawable/header_close_idle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_toLeftOf="@id/btnClose"
+            android:alpha="0.3"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/settingsGeneralScrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@+id/theTitleBar" android:layout_alignParentBottom="true" android:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_below="@+id/theTitleBar"
+                android:background="@color/color_apps" />
+
+
+            <TextView
+                android:id="@+id/settingsQMainText"
+                style="@style/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:text="@string/quicksettings"
+                android:textColor="@color/white" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                style="@style/settingsSelection"
+                app:set_key="@string/learnmode"
+                app:set_value="@string/learnmodesub"
+                app:set_type="onOff"
+                app:set_typevalue="learn"
+                app:set_icon="@drawable/ic_pause_circle_outline_black_24dp" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                style="@style/settingsSelection"
+                app:set_key="@string/tracking"
+                app:set_value="@string/trackingsub"
+                app:set_type="onOff"
+                app:set_typevalue="trackme"
+                app:set_icon="@drawable/ic_gps_fixed_black_24dp" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                style="@style/settingsSelection"
+                app:set_key="@string/currentcountry"
+                app:set_value="@string/currentcountrysub"
+                app:set_type="flag"
+                app:set_typevalue="national"
+                android:onClick="numbersLaunch"
+                app:set_icon="@drawable/ic_flag_black_24dp" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                style="@style/settingsSelection"
+                android:id="@+id/enablings"
+                app:set_key="@string/activeguards"
+                app:set_value="@string/activeguardssub"
+                app:set_type="guards"
+                app:set_typevalue="guards"
+                android:onClick="quickEnableGuards"
+                app:set_icon="@drawable/guard_icon_red" />
+
+
+            <TextView
+                android:id="@+id/settingsMainText"
+                style="@style/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="@string/detailsettings"
+                android:textColor="@color/white" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_person"
+                app:set_key="@string/generalsettings"
+                style="@style/settingsSelection"
+                android:onClick="generalLaunch"/>
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_contact_mail_black_24dp"
+                app:set_key="@string/sublabel_contact"
+                style="@style/settingsSelection"
+                android:onClick="contactLaunch"/>
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_library_books_black_24dp"
+                app:set_key="@string/medilabel"
+                style="@style/settingsSelection"
+                android:onClick="healthLaunch"/>
+
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_supervisor_account_black_24dp"
+                app:set_key="@string/guardshandling"
+                style="@style/settingsSelection"
+                android:onClick="guardsLaunch"/>
+
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_verified_user_black_24dp"
+                app:set_key="@string/protectedstracking"
+                style="@style/settingsSelection"
+                android:onClick="startGuards"
+                />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_warning_black_24dp"
+                app:set_key="@string/signalsetup"
+                style="@style/settingsSelection"
+                android:onClick="emergencyLaunch" />
+
+            <TextView
+                android:id="@+id/settingsMainText3"
+                style="@style/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="@string/informations"
+                android:textColor="@color/white" />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_help_black_24dp"
+                app:set_key="@string/help"
+                android:onClick="helpLaunch"
+                style="@style/settingsSelection"
+                />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_key="@string/applang"
+                android:onClick="chooseLang"
+                style="@style/settingsSelection"
+                app:set_icon="@drawable/ic_flag_black_24dp"
+                />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_bookmark_border_black_24dp"
+                app:set_key="@string/terms"
+                android:onClick="termsLaunch"
+                style="@style/settingsSelection"
+                />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_send_black_24dp"
+                app:set_key="@string/appinvite"
+                android:onClick="appinvite"
+                style="@style/settingsSelection"
+                />
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_speaker_phone_black_24dp"
+                app:set_key="@string/playdemosos"
+                android:onClick="playSOS"
+                style="@style/settingsSelection"
+                />
+
+
+            <com.blueobject.app.alive.ui.SettingsView
+                app:set_icon="@drawable/ic_clear_black_24dp"
+                app:set_key="@string/exit"
+                android:onClick="exit"
+                style="@style/settingsSelection"
+                />
+
+            <FrameLayout
+                android:id="@+id/driveReminderShadow"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/settingsItemGap"
+                android:background="@color/color_apps"
+                android:foreground="@drawable/cell_shadow_dark" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/color_apps" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+
+
+
+</LinearLayout>

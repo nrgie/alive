@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/WizardPageContainer"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="@string/add_medinfo"
+                android:textAllCaps="true" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicaldate"
+                    android:inputType="date" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicaldetail"
+                    android:inputType="text|textMultiLine|textImeMultiLine|textLongMessage"
+                    tools:inputType="textMultiLine|textImeMultiLine|textLongMessage" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/footer_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wrapper"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/white"
+                android:elevation="3dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_small">
+
+                <Button
+                    android:id="@+id/cancel"
+                    style="@style/BaseTheme.Button.Footer.Previous"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/save"
+                    style="@style/BaseTheme.Button.Footer.Next"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="@string/save" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

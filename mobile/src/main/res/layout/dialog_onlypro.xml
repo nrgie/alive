@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_head_root"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <!--Profile image for the chat head.
+    <ImageView
+        android:id="@+id/chat_head_profile_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/avatar"
+        tools:ignore="ContentDescription"/>
+    -->
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/WizardPageTitle"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:text="@string/onlypro"
+        android:textAllCaps="true"
+        android:textColor="#424242"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/prolink"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="30dp"
+        android:src="@drawable/playstore"
+        tools:ignore="ContentDescription" />
+
+    <!--Close button-->
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/com_facebook_close"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

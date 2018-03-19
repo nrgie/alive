@@ -1,0 +1,655 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/reddiagonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/ic_info_outline_white_36dp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/WizardPageContainer"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/WizardPageTitle"
+                    android:gravity="center_horizontal"
+                    android:padding="0dp"
+                    android:text=""
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/com_facebook_close" />
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/avatarpic"
+                            android:layout_width="90dp"
+                            android:layout_height="100dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/avatar" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/e1w"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/avatarpic">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/name1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:hint="@string/name1"
+                                android:inputType="text"
+                                android:textColor="#313131"
+                                app:testType="personName" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/e1w"
+                            android:layout_toRightOf="@+id/avatarpic">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/name2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:hint="@string/name2"
+                                android:inputType="text"
+                                android:textColor="#313131"
+                                app:testType="personName" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/divider_grey">
+            </View>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.blueobject.app.alive.ui.SmoothCheckBox
+                            android:id="@+id/onOff"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/onOff"
+                            android:layout_marginStart="15dp"
+                            >
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/active"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="#fff"
+                                android:enabled="false"
+                                android:hint="@string/guardactiveinfo"
+                                android:inputType="textEmailAddress"
+                                android:padding="0dp"
+                                android:text="@string/inactive"
+                                android:textAllCaps="false"
+                                android:textColor="#313131"
+                                app:testType="email" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.blueobject.app.alive.ui.SmoothCheckBox
+                            android:id="@+id/onOffcall"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_toRightOf="@+id/onOffcall">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="#fff"
+                                android:enabled="false"
+                                android:hint=""
+                                android:padding="0dp"
+                                android:text="@string/guardcall_label"
+                                android:textAllCaps="false"
+                                android:textColor="#313131"
+                                android:textSize="16sp"
+                                app:testType="email" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.blueobject.app.alive.ui.SmoothCheckBox
+                            android:id="@+id/onOffsms"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/e2we"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/onOffsms"
+                            android:layout_marginStart="15dp"
+                            >
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="#fff"
+                                android:enabled="false"
+                                android:hint=""
+                                android:padding="0dp"
+                                android:textSize="16sp"
+                                android:text="@string/guardsms_label"
+                                android:textAllCaps="false"
+                                android:textColor="#313131"
+                                app:testType="email" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.blueobject.app.alive.ui.SmoothCheckBox
+                            android:id="@+id/onOffemail"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/onOffemail"
+                            android:layout_marginStart="15dp"
+                            >
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="#fff"
+                                android:enabled="false"
+                                android:hint=""
+                                android:padding="0dp"
+                                android:textSize="16sp"
+                                android:text="@string/guardemail_label"
+                                android:textAllCaps="false"
+                                android:textColor="#313131"
+                                app:testType="email" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <!--
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <com.blueobject.app.alive.ui.SmoothCheckBox
+                            android:id="@+id/onOfffacebook"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:enabled="false"
+                            android:layout_centerVertical="true" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_toRightOf="@+id/onOfffacebook">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="#fff"
+                                android:enabled="false"
+                                android:hint=""
+                                android:padding="0dp"
+                                android:textSize="16sp"
+                                android:text="@string/guardfacebook_label"
+                                android:textAllCaps="false"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+                    -->
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginTop="@dimen/padding_small"
+                        android:background="@color/divider_grey">
+                    </View>
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            app:ccp_showNameCode="false"
+                            app:ccp_showPhoneCode="false" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_toRightOf="@+id/flag">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/flagtext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:enabled="false"
+                                android:hint="@string/flaginfo"
+                                android:text="Hungary"
+                                android:textAllCaps="false"
+                                android:textColor="#313131"
+                                app:testType="email" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/emailpre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/email" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/e2w"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/emailpre"
+                        android:layout_marginStart="10dp"
+                        >
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:textAllCaps="false"
+                            android:textColor="#313131"
+                            app:testType="email" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/telpre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/phone_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toRightOf="@+id/telpre"
+                            android:animateLayoutChanges="false">
+
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone"
+                                android:inputType="number"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/facepre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/facebook_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/facepre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/face"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/fbprofile"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/viberpre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/viber_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/viberpre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/viber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/viber"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/whatspre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/whatsapp_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/whatspre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/whats"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/whatsapp"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/skypepre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/skype_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/skypepre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/skype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/skype"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/snappre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/snapchat_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/snappre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/snap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/snapchat"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:elevation="11dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_small">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/BaseTheme.Button.Footer.Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:onClick="exit"
+            android:layout_marginRight="20dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/BaseTheme.Button.Footer.Next"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</RelativeLayout>

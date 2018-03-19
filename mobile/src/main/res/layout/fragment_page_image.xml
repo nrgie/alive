@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WizardPageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <!-- scrollview child -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- card select photo -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cardview_default_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+
+            <!-- card root -->
+            <LinearLayout
+                android:id="@+id/box_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal">
+
+                <!-- title -->
+                <TextView style="@style/WizardPageTitle" />
+
+                <Button
+                    android:id="@+id/camera_btn"
+                    style="@style/BaseTheme.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:text="@string/camera_pick" />
+
+                <Button
+                    android:id="@+id/gallery_btn"
+                    style="@style/BaseTheme.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_photo_library_black_24dp"
+                    android:drawablePadding="@dimen/padding_small"
+                    android:text="@string/gallery_pick" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- card preview -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cardview_default_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+            <!-- card root -->
+            <LinearLayout
+                android:id="@+id/box_image_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_normal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/image_preview"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <!--
+                 it has been used android:adjustViewBounds="true" to solve with spaces above and below the picture
+                 source: https://letustech.wordpress.com/2013/06/05/empty-space-above-and-below-the-android-imageview/
+                 -->
+                <FrameLayout
+                    android:id="@+id/frameLayoutImageContainer"
+                    style="@style/WizardPageImageContainer">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/WizardPageImage"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

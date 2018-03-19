@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!-- box buttons -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@android:color/white"
+    android:elevation="3dp"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/padding_small">
+
+    <Button
+        android:id="@+id/prev_button"
+        style="@style/BaseTheme.Button.Footer.Previous"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/prev" />
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/BaseTheme.Button.Footer.Next"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="@string/next" />
+</LinearLayout>

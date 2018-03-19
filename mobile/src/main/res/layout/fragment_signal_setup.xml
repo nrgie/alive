@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WizardPageContainer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/wiztitle"
+                style="@style/WizardPageTitle"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="@string/label_perm"
+                android:textAllCaps="true" />
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:layout_below="@+id/wiztitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="@string/sublabel_perm"
+                android:textColor="@color/grey_title"
+                android:textSize="12sp"
+
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/divider_grey">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/perm_sos_title"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/soscall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_sos_call" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sossms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_sos_sms" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sosguardcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardcall_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sosguardsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardsms_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/sosguardemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardemail_title" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/divider_grey">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/perm_police_title"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/policecall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_police_call" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/policesms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_police_sms" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/policeguardcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardcall_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/policeguardsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardsms_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/policeguardemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardemail_title" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/divider_grey">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/perm_firedep_title"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/firecall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_firedep_call" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/firesms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_firedep_sms" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fireguardcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardcall_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fireguardsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardsms_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fireguardemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardemail_title" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/divider_grey">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/perm_amb_title"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ambcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_amb_call" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ambsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_amb_sms" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ambguardcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardcall_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ambguardsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardsms_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ambguardemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardemail_title" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/divider_grey">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/perm_ta_title"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/tacall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_ta_call" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/tasms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_ta_sms" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/taguardcall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardcall_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/taguardsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardsms_title" />
+
+                        <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/taguardemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:orientation="vertical"
+                            android:text="@string/perm_guardemail_title" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

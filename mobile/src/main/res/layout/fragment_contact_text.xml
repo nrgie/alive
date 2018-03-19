@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WizardPageContainer"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <TextView style="@style/WizardPageTitle"
+                android:text="@string/label_contact"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                style="@style/WizardPageTitle"
+                android:text="@string/sublabel_contact"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:textColor="@color/grey_title"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/settingsViewSeparator"
+                style="@style/settingsSeparator"
+                android:background="@color/PassiveGrey"
+                />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.blueobject.app.alive.ui.SettingsView
+                        style="@style/settingsSelection"
+                        android:id="@+id/facebook"
+                        app:set_icon="@drawable/facebook_ikon"
+                        app:set_key="@string/facebook"
+                        app:set_type="input1"
+                        app:set_typevalue="user.facebook"
+                        />
+
+                    <com.blueobject.app.alive.ui.SettingsView
+                        style="@style/settingsSelection"
+                        android:id="@+id/viber"
+                        app:set_icon="@drawable/viber_ikon"
+                        app:set_key="@string/viber"
+                        app:set_type="input1"
+                        app:set_typevalue="user.viber"
+                        />
+
+                    <com.blueobject.app.alive.ui.SettingsView
+                        style="@style/settingsSelection"
+                        android:id="@+id/whats"
+                        app:set_icon="@drawable/whatsapp_ikon"
+                        app:set_key="@string/whatsapp"
+                        app:set_type="input1"
+                        app:set_typevalue="user.whatsapp"
+                        />
+
+                    <com.blueobject.app.alive.ui.SettingsView
+                        style="@style/settingsSelection"
+                        android:id="@+id/skype"
+                        app:set_icon="@drawable/skype_ikon"
+                        app:set_key="@string/skype"
+                        app:set_type="input1"
+                        app:set_typevalue="user.skype"
+                        />
+
+                    <com.blueobject.app.alive.ui.SettingsView
+                        style="@style/settingsSelection"
+                        android:id="@+id/snap"
+                        app:set_icon="@drawable/snapchat_ikon"
+                        app:set_key="@string/snapchat"
+                        app:set_type="input1"
+                        app:set_typevalue="user.snapchat"
+                        />
+
+                    <!--
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/facepre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/facebook_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/facepre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/face"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/fbprofile"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/viberpre"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="3dp"
+                            android:src="@drawable/viber_ikon" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/viberpre">
+
+                            <com.andreabaccega.widget.FormEditText
+                                android:id="@+id/viber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:hint="@string/viber"
+                                android:inputType="text"
+                                android:textColor="#313131" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/whatspre"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:src="@drawable/whatsapp_ikon" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/whatspre"
+                        android:layout_height="wrap_content">
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/whats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/whatsapp"
+                            android:inputType="text"
+                            android:textColor="#313131" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/skypepre"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:src="@drawable/skype_ikon" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/skypepre"
+                        android:layout_height="wrap_content">
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/skype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/skype"
+                            android:inputType="text"
+                            android:textColor="#313131" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/snappre"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3dp"
+                        android:src="@drawable/snapchat_ikon" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/snappre"
+                        android:layout_height="wrap_content">
+
+                        <com.andreabaccega.widget.FormEditText
+                            android:id="@+id/snap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="10dp"
+                            android:hint="@string/snapchat"
+                            android:inputType="text"
+                            android:textColor="#313131" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+                -->
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

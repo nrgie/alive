@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/guardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/gicon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/settingsGutter"
+        android:adjustViewBounds="true"
+        android:gravity="center_vertical"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/settingsViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/settingsGutter"
+        android:layout_marginRight="@dimen/settingsGutter"
+        android:layout_toLeftOf="@+id/settingsViewContent"
+        android:layout_toRightOf="@id/gicon"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/settingsGutter"
+        android:paddingTop="@dimen/settingsGutter">
+
+        <TextView
+            android:id="@+id/key"
+            style="@style/settingsText"
+            android:textColor="@color/color_apps"
+            android:textStyle="bold"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/settingsSubText"
+            android:textColor="@color/color_apps"
+            android:text="Value" />
+    </LinearLayout>
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/flag"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@+id/invited"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false" />
+
+    <TextView
+        android:id="@+id/invited"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/settingsViewContent"
+        android:background="@drawable/ic_help_outline_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:textAllCaps="true"
+        android:textColor="@color/color_apps"
+        android:textSize="11sp" />
+
+    <FrameLayout
+        android:id="@+id/settingsViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/deleteGuard"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:background="@drawable/guardclose" />
+
+
+
+        <TextView
+            android:id="@+id/ddnext"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@+id/invited"
+            android:gravity="center"
+            android:text=">"
+            android:textColor="@color/color_apps"
+            android:textScaleX="0.5"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/settingsViewSeparator"
+        style="@style/settingsSeparator"
+        android:layout_alignBottom="@id/settingsViewText" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+        android:id="@+id/call"
+		android:icon="@drawable/ic_call_black_24dp"
+        android:title="@string/callthis" />
+		
+	<item
+		android:id="@+id/map"
+		android:icon="@drawable/ic_map_marker_outline_black_24dp"
+		android:title="@string/nearestmap" />
+</menu>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="allergies">
+    <item>Pollen</item>
+    <item>Animal dander</item>
+    <item>Domestic dust</item>
+    <item>Gluten</item>
+    <item>Shellfish</item>
+    <item>Eggs</item>
+    <item>Fish</item>
+    <item>Peanut</item>
+    <item>Soy</item>
+    <item>Milk (lactose)</item>
+    <item>Nuts</item>
+    <item>Celery</item>
+    <item>Mustard</item>
+    <item>Sesame seed</item>
+    <item>Sulfur-dioxide</item>
+    <item>Lupine</item>
+    <item>Molluscs</item>
+  </string-array>
+  <string-array name="blood">
+    <item>A</item>
+    <item>B</item>
+    <item>AB</item>
+    <item>0</item>
+  </string-array>
+  <string-array name="bloodrh">
+    <item>Rh-</item>
+    <item>Rh+</item>
+  </string-array>
+  <string-array name="drawer_titles">
+    <item>MAIN PAGE</item>
+    <item>MAP</item>
+    <item>SETTINGS</item>
+    <item>INVITE</item>
+    <item>EXIT</item>
+  </string-array>
+  <string-array name="gender">
+    <item>Female</item>
+    <item>Male</item>
+  </string-array>
+  <string-array name="image_photo_sources">
+    <item>@string/gallery_pick</item>
+    <item>@string/camera_pick</item>
+  </string-array>
+  <string-array name="languages">
+    <item>English</item>
+    <item>Spanish</item>
+    <item>Portuguese</item>
+    <item>Russian</item>
+    <item>Hungarian</item>
+    <item>Italian</item>
+    <item>French</item>
+    <item>German</item>
+    <item>Japanese</item>
+    <item>Mandarin</item>
+  </string-array>
+  <string name="app_name">Save Me</string>
+  <string name="your_name">User</string>
+  <string name="facebook_app_id">1465145516906801</string>
+  <string name="fb_login_protocol_scheme">fb1465145516906801</string>
+  <string name="title_activity_maps">Map</string>
+  <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+  <string name="location_permission_denied">This application requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings.</string>
+  <string name="permission_required_toast">Location permission is required</string>
+  <string name="action_settings">Settings</string>
+  <string name="settings">Settings</string>
+  <string name="save">Save</string>
+  <string name="settingssaved">Settings are saved</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="enablegps">Location</string>
+  <string name="enablegpstext">Please enable GPS services in the settings.</string>
+  <string name="OK">OK</string>
+  <string name="cancel">Cancel</string>
+  <string name="welcome">Welcome!</string>
+  <string name="init_page_text"><![CDATA[<p style=\"margin:0;padding:0;\">Thanks for downloading this app. Please watch the introduction video under these lines and sign in or create your profile. Let the save me application cares for you.</p>]]></string>
+  <string name="start_setup">Start up</string>
+  <string name="invitation_title">Send App invitation</string>
+  <string name="invitation_message">I recommend downloading the Save Me! app</string>
+  <string name="invitation_deep_link">Send App invitation</string>
+  <string name="invitation_custom_image">Send App invitation</string>
+  <string name="invitation_cta">Send App invitation</string>
+  <string name="fa_bars"></string>
+  <string name="fa_lock"></string>
+  <string name="fa_key"></string>
+  <string name="fa_user"></string>
+  <string name="fa_email"></string>
+  <string name="fa_id"></string>
+  <string name="fa_birth"></string>
+  <string name="fa_settle"></string>
+  <string name="fa_back"></string>
+  <string name="fa_info"></string>
+  <string name="fa_search"></string>
+  <string name="loadingIcon"></string>
+  <string name="playIcon"></string>
+  <string name="stopIcon"></string>
+  <string name="crash_toast_text"></string>
+  <string name="lorem"></string>
+  <string name="image_dir_name"></string>
+  <string name="next">Next</string>
+  <string name="prev">Previous</string>
+  <string name="finish">Save</string>
+  <string name="no_item_selected">Nincs</string>
+  <string name="image_preview">Preview</string>
+  <string name="gallery_pick">Choose from gallery</string>
+  <string name="camera_pick">Take a picture</string>
+  <string name="hint_choose_date">Select date</string>
+  <string name="label_current_item_picked">Chosen:\t</string>
+  <string name="label_choose_item_picked">Nothing is selected</string>
+  <string name="label_current_days_picked">Selected day:\t</string>
+  <string name="label_days">\t days</string>
+  <string name="search_hint">Searching...</string>
+  <string name="no_result_found">No match</string>
+  <string name="select_country">Select your country</string>
+  <string name="label_basic">Identification</string>
+  <string name="sublabel_basic">Enter basic information</string>
+  <string name="name1">Surname</string>
+  <string name="name2">Given name</string>
+  <string name="addnew">Add new guardian</string>
+  <string name="email">Email address</string>
+  <string name="national">Citizenship</string>
+  <string name="bday">Birth date</string>
+  <string name="gender">Gender</string>
+  <string name="insurancenum">Social insurance number</string>
+  <string name="label_contact">Contacts</string>
+  <string name="sublabel_contact">Contact settings</string>
+  <string name="myphone">Phone number</string>
+  <string name="fbprofile">Facebook profile</string>
+  <string name="whatsapp">WhatsApp</string>
+  <string name="skype">Skype</string>
+  <string name="viber">Viber</string>
+  <string name="snapchat">Snapchat</string>
+  <string name="label_health">Health insurance and medical information</string>
+  <string name="sublabel_health">This information will appear when medical info button is pressed, or in an emergency, and also it will be sent to the selected information channels.</string>
+  <string name="bloodtype">Blood type</string>
+  <string name="bloodtyperh">Blood type - Rh type</string>
+  <string name="height">Height</string>
+  <string name="weight">Weight</string>
+  <string name="allergy">Allergies</string>
+  <string name="medicalinfo">Past or continuous medical intervention / supervision</string>
+  <string name="medicines">Your permanent medicines</string>
+  <string name="choosed_country">Selected country</string>
+  <string name="doctors">List of your doctors</string>
+  <string name="label_numbers">Country phone numbers</string>
+  <string name="sublabel_numbers">Enter emergency phone numbers of the selected country</string>
+  <string name="emergencynum">Emergency services phone number</string>
+  <string name="emergencynum_hint">Emergency services phone number</string>
+  <string name="police">Police</string>
+  <string name="police_hint">Police phone number</string>
+  <string name="firedep">Fire department</string>
+  <string name="firedep_hint">Fire department phone number</string>
+  <string name="ambulance">Ambulance</string>
+  <string name="ambulance_hint">Ambulance phone number</string>
+  <string name="label_guardians">Guardian Angels</string>
+  <string name="sublabel_guardians">Select your Guardian Angles from the phone directory</string>
+  <string name="phonenum">Phone number</string>
+  <string name="confirm_del_guardian">Are you sure you want to delete this Guardian Angel</string>
+  <string name="error_only_numeric_digits_allowed">Only numeric digits</string>
+  <string name="error_only_numeric_digits_range_allowed">Only numeric digits within the range %1$s - %2$s are allowed</string>
+  <string name="error_this_field_cannot_contain_special_character">This field do not support any special character</string>
+  <string name="error_only_standard_letters_are_allowed">Only standard letters are allowed</string>
+  <string name="error_field_must_not_be_empty">This cell cannot be blank</string>
+  <string name="error_email_address_not_valid">Invalid address</string>
+  <string name="error_creditcard_number_not_valid">Credit card number is not valid</string>
+  <string name="error_phone_not_valid">Not valid phone number</string>
+  <string name="error_domain_not_valid">Domain name not valid</string>
+  <string name="error_ip_not_valid">IP Address not valid</string>
+  <string name="error_url_not_valid">Web URL is not valid</string>
+  <string name="error_notvalid_personname">Not a valid first or last name.</string>
+  <string name="error_notvalid_personfullname">Invalid name</string>
+  <string name="error_date_not_valid">Invalid date input</string>
+  <string name="label_perm">Emergency Alert Settings</string>
+  <string name="sublabel_perm">Settings for alert types, and settings of the notified group of people for each case of emergency</string>
+  <string name="perm_sos_title">SOS Alert</string>
+  <string name="perm_sos_call">Calling Emergency number</string>
+  <string name="perm_sos_sms">SMS notification to Emergency number</string>
+  <string name="perm_police_title">Police Emergency Alert</string>
+  <string name="perm_police_call">Calling Police Emergency number</string>
+  <string name="perm_police_sms">SMS notification to Police Emergency number in the background</string>
+  <string name="perm_firedep_title">Fire Department Emergency Alert</string>
+  <string name="perm_firedep_call">Calling Fire Department Emergency number</string>
+  <string name="perm_firedep_sms">SMS notification to Fire Department Emergency number</string>
+  <string name="perm_amb_title">Ambulance Emergency Alert</string>
+  <string name="perm_amb_call">Calling Ambulance Emergency number</string>
+  <string name="perm_amb_sms">SMS notification to Ambulance Emergency number in the background</string>
+  <string name="perm_ta_title">Terrorist Attack Emergency Alert</string>
+  <string name="perm_ta_call">Calling Emergency Number</string>
+  <string name="perm_ta_sms">SMS to Emergency Number in the background</string>
+  <string name="perm_guardcall_title">Notify your Guardian Angels by phone call in the background</string>
+  <string name="perm_guardsms_title">Notify your Guardian Angels by SMS in the background</string>
+  <string name="perm_guardemail_title">Notify your Guardian Angels by e-mail in the background</string>
+  <string name="guardcall_label">Notification by phone call in the background</string>
+  <string name="guardsms_label">Notification by SMS in the background</string>
+  <string name="guardemail_label">Notification by e-mail in the background</string>
+  <string name="guardfacebook_label">Notification by Messenger </string>
+  <string name="smstext">SOS! HELP! I\'M IN TROUBLE! MY GPS COORDINATES ARE.·
+    </string>
+  <string name="calltext">SOS! HELP! I\'M IN TROUBLE! MY GPS COORDINATES ARE. </string>
+  <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+  <string name="default_notification_channel_name" translatable="true">News</string>
+  <string name="done_label">\"Done\"</string>
+  <string name="hour_picker_description">Hours circular slider</string>
+  <string name="minute_picker_description">Minutes circular slider</string>
+  <string name="select_hours">Select hours</string>
+  <string name="select_minutes">Select minutes</string>
+  <string name="day_picker_description">Days in monthly view</string>
+  <string name="year_picker_description">Years</string>
+  <string name="select_day">Select month and day</string>
+  <string name="select_year">Select year</string>
+  <string name="item_is_selected">Item is selected</string>
+  <string name="deleted_key">Deleted key</string>
+  <string name="sans_serif" translatable="false">sans-serif</string>
+  <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+  <string name="radial_numbers_typeface" translatable="false">sans-serif</string>
+  <string name="or">or</string>
+  <string name="aszf"> I accept <u>terms and conditions</u>.</string>
+  <string name="termstitle">Terms and Conditions</string>
+  <string name="chooselang">Choose language</string>
+  <string name="aszftext">
+    Lorem ipsum dolor sit amet, adipisicing id gravida eu sapien, risus sollicitudin sit feugiat labore, velit ipsum, porttitor aenean maecenas adipiscing et. Fermentum sem, volutpat quam wisi. Volutpat proin pharetra porttitor tellus ac tincidunt, accumsan et vulputate nibh. Sapien curabitur quis, sapien ultrices pellentesque aliquam dui pretium nulla, phasellus architecto nam at libero urna aliquam, nulla turpis lectus, ante cubilia aenean adipiscing. Mattis nullam aut vitae turpis.
+    </string>
+  <string name="phone">Phone number</string>
+  <string name="ok">Ok</string>
+  <string name="picker_picker_done_button_text">Done</string>
+  <string name="choose_friends">Choose Friends</string>
+  <string name="usersettings_fragment_log_in_button">Log in…</string>
+  <string name="usersettings_fragment_logged_in">Logged in</string>
+  <string name="usersettings_fragment_not_logged_in">Not logged in</string>
+  <string name="usersettings_fragment_logo_content_description">Facebook Logo</string>
+  <string name="confirm_call_guardian">Confirm to call you guardian angel</string>
+  <string name="confirm_call_doctor">Confirm to call your doctor</string>
+  <string name="name">Name</string>
+  <string name="confirm_delete_item">Confirm delete item</string>
+  <string name="medicinename">Medicine name</string>
+  <string name="medicaldetail">Description of treatment or illness</string>
+  <string name="medicaldate">Medical date</string>
+  <string name="add_doctor">Add doctor</string>
+  <string name="add_med">Add medicine</string>
+  <string name="add_medinfo">Add medical info</string>
+  <string name="erd_title">Rate this app</string>
+  <string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features</string>
+  <string name="erd_no_thanks">No, thanks</string>
+  <string name="erd_remind_me_later">Remind me later</string>
+  <string name="erd_rate_now">Rate now</string>
+  <string name="password">Password</string>
+  <string name="login">Login</string>
+  <string name="logintext">Login</string>
+  <string name="back">back</string>
+  <string name="nsd_servername_postfix">snameuniqe</string>
+  <string name="add_allergy">Add Allergy</string>
+  <string name="allergyinfo">Allergy info</string>
+  <string name="modify">Modify</string>
+  <string name="add">Add</string>
+  <string name="settingstitle">Settings</string>
+  <string name="fullname">Full name</string>
+  <string name="firstname">First name</string>
+  <string name="middlename">Middle name</string>
+  <string name="lastname">Last name</string>
+  <string name="male">Male</string>
+  <string name="female">Female</string>
+  <string name="facebook">My Facebook</string>
+  <string name="edit">Edit</string>
+  <string name="weightunit">kg</string>
+  <string name="heightunit">cm</string>
+  <string name="reject">Reject</string>
+  <string name="accept">Accept</string>
+  <string name="delete">Delete</string>
+  <string name="rejected">Declined</string>
+  <string name="notasked">Yet you are not selected for Guardian Angel </string>
+  <string name="invalidform">Invalid form</string>
+  <string name="alreadyguard">Already chosen for Guardian Angel</string>
+  <string name="home">Address</string>
+  <string name="foordoor">Floor/door</string>
+  <string name="street">Street</string>
+  <string name="streetno">Number</string>
+  <string name="city">City</string>
+  <string name="zip">Zip code</string>
+  <string name="password_again">Please insert your password again</string>
+  <string name="passnotmatch">Passwords are not matching</string>
+  <string name="passhint">Please enter identical content into both field</string>
+  <string name="playdemosos">Play your outgoing emergency message·</string>
+  <string name="demosoundtitle">Play your demo emergency message </string>
+  <string name="choosehelptype">Please select help </string>
+  <string name="browsefaq">Browse FAQ</string>
+  <string name="sendmailforus">Send e-mail for support</string>
+  <string name="finishSOS">Stop SOS</string>
+  <string name="guardactiveinfo">Turn On/Off your Guardian Angel</string>
+  <string name="flaginfo">Residence of the Guardian Angel</string>
+  <string name="active">Active</string>
+  <string name="inactive">Inactive</string>
+  <string name="passwordhint">The password for next time entering the app or web</string>
+  <string name="takeashot">Take a picture</string>
+  <string name="terror_hint">Phone number of anti-terrorist organization</string>
+  <string name="spokenlangs">Spoken language</string>
+  <string name="nothaveguard">You have no Guardian Angel yet</string>
+  <string name="SendNow">Send</string>
+  <string name="seconds">sec</string>
+  <string name="closeview">Close</string>
+  <string name="speciality">Specialization </string>
+  <string name="additional">Other information!</string>
+  <string name="parentcontrol">Parent Control</string>
+  <string name="enterpin">Enter PIN</string>
+  <string name="pindigits">4 digit code</string>
+  <string name="pintitle">Setup PIN code</string>
+
+  <string name="pinhint">Leave the PIN blank, to deactivate the PIN code!</string>
+  <string name="medicineqty">Dosage of medicine </string>
+  <string name="callthis">Call</string>
+  <string name="nearestmap">Nearest on map</string>
+  <string name="customallergy">Unique allergy</string>
+  <string name="camera">Camera</string>
+  <string name="gallery">Gallery</string>
+  <string name="choose">Choose</string>
+  <string name="loading">Loading...</string>
+  <string name="no_providers">No providers available to show.</string>
+  <string name="wrong_authority">FileProvider not declared or has wrong authority. (Must be ${applicationId}.com.vansuita.pickimage.provider, check your AndroidManifest.xml)</string>
+  <string name="activity_destroyed">Activity was destroyed, can\'t handle pick image result.</string>
+  <string name="select_language">Choose language</string>
+  <string name="student_mode_alert">In practice mode, no real alarm will start</string>
+  <string name="sos_alertforpro">To start an emergency call, please install the Pro version from the Play store</string>
+  <string name="logout_askmsg">Are you sure you want to exit?</string>
+  <string name="logout">Log out</string>
+  <string name="invalid_login">Invalid login</string>
+  <string name="help">Help</string>
+  <string name="mainhelp">Help for the main page!</string>
+  <string name="sendedsostxt">Sent S.O.S message!</string>
+  <string name="understand">I understand!</string>
+  <string name="wizardpage1">First steps to configure your application. Thanks for taking the time to fill out your personal information. To fill in, tap the rows to get an input field. In the case of incomplete or incorrectly filled fields, you will see a red mark. You can switch between pages by using the \"previous\" and \"next\" buttons. If a field is empty or incorrect, you will not be able to proceed to the next page until it is filled out correctly.</string>
+  <string name="wizardpage2">On this page, you can enter your further social contact information.</string>
+  <string name="wizardpage3">On this page you may add your health information. This information is transmitted to the set channels if something happens to you.</string>
+  <string name="wizardpage4">Depending on your country of residence, you can set emergency numbers if they differ from the recommended phone numbers. We recommend that if you travel to another country to change your country of residence.</string>
+  <string name="wizardpage5">Guardian angels are the people who can be informed immediately if something happens to you. To have someone your guardian angel, you need to send an invitation, and the person to download the app. Once the request has been accepted your guardian angel will become active and you may see your guardian\'s angel notification information on the detailed page of the guardian\'s angel.</string>
+  <string name="wizardpage6">Here you can configure what channel to be used for some emergency events, even in the event of an incident reporting is in parallel.</string>
+  <string name="medicalpageinfo">Here you may record your medical information and additional data  If you have or had any surgery or intervention. Add a new item by clicking the + icon.</string>
+  <string name="doctorpageinfo">Please insert the details of your doctors!</string>
+  <string name="medpageinfo">Please insert your medication information here!</string>
+  <string name="medicaleditpageinfo">Please insert your past or most recent surgery and any other similar information!</string>
+  <string name="doctoreditpageinfo">On this page, you can grant your doctors availability.</string>
+  <string name="mededitpageinfo">On this page, you can detail your medication.</string>
+  <string name="allergypageinfo">On this list, you can select your allergies, or type it if not listed.</string>
+  <string name="main_help_btn">Use this button for help!</string>
+  <string name="main_settings_btn">Use this button to view settings.</string>
+  <string name="main_guardstrack_btn">Use this button to view on the map the current position of your guardian angels.</string>
+  <string name="main_medinfo_btn">To view the summary of your medical data sheet.</string>
+  <string name="main_fire_btn">Keep this button pressed for at least 5 seconds to send an instant voice message in which your position is also transmitted to the fire service emergency number</string>
+  <string name="main_health_btn">Keep this button pressed for at least 5 seconds to send an instant voice message in which your position is also transmitted to the ambulance emergency number</string>
+  <string name="main_police_btn">Keep this button pressed for at least 5 seconds to send an instant voice message in which your position is also transmitted to the police emergency number</string>
+  <string name="main_sos_btn">Keeping this button pressed for at least 5 seconds, sends a generic instant alarm to the configured connection channels</string>
+  <string name="main_ta_btn">Keep this button pressed for at least 5 seconds to send a Terrorist Attack signal with your position to the set channels</string>
+  <string name="quicksettings">Quick settings</string>
+  <string name="learnmode">Learing mode</string>
+  <string name="learnmodesub">Signals will NOT be sended until this will activate</string>
+  <string name="tracking">Tracking</string>
+  <string name="trackingsub">Guardians can view my GPS position anytime</string>
+  <string name="currentcountry">Country of residence</string>
+  <string name="currentcountrysub">Setup residence country</string>
+  <string name="activeguards">Active guardians</string>
+  <string name="activeguardssub">Setup active guardians</string>
+  <string name="detailsettings">Detailed settings</string>
+  <string name="generalsettings">General settings</string>
+  <string name="medilabel">Medical ID</string>
+  <string name="guardshandling">Handling Guardians</string>
+  <string name="protectedstracking">Tracking my protecteds</string>
+  <string name="signalsetup">Emergency settings</string>
+  <string name="informations">Informations</string>
+  <string name="terms">Terms and privacy</string>
+  <string name="appinvite">App invite sending</string>
+  <string name="exit">Exit</string>
+  <string name="notfoundprot">Not found any protecteds to track</string>
+  <string name="presscallbtn">Please press the call launcher button to confirm you are in a real emergency</string>
+  <string name="timercontinue">Please unlock your phone to continue !</string>
+  <string name="onlypro">This feaute is only available in Pro version. Please install the Pro version from the Play store</string>
+    <string name="applang">App language</string>
+    <string name="terrorTitle">TERROR ATTACK !</string>
+    <string name="terrorBody">Terror attack near you! Tap to show in map</string>
+    <string name="terrorhere">Terror attack here</string>
+</resources>

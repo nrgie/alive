@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WizardPageContainer"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:focusableInTouchMode="true"
+        android:paddingTop="5dp">
+
+        <TextView
+            style="@style/WizardPageTitle"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="@string/label_basic"
+            android:textAllCaps="true" />
+
+        <TextView
+            style="@style/WizardPageTitle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="@string/sublabel_basic"
+            android:textColor="@color/grey_title"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/settingsViewSeparator"
+            style="@style/settingsSeparator"
+            android:background="@color/PassiveGrey"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/fullname"
+                    app:set_key="@string/fullname"
+                    app:set_type="input"
+                    app:set_typevalue="user.name"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/myphone"
+                    app:set_key="@string/myphone"
+                    app:set_type="input"
+                    app:set_typevalue="user.phone"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/mail"
+                    app:set_key="@string/email"
+                    app:set_type="input1"
+                    app:set_typevalue="user.email"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/pass"
+                    app:set_key="@string/password"
+                    app:set_type="input"
+                    app:set_hint="@string/passwordhint"
+                    app:set_typevalue="user.password"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/birthday"
+                    app:set_key="@string/bday"
+                    app:set_value=""
+                    app:set_type="birthday"
+                    app:set_typevalue="user.bday"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/gend"
+                    app:set_key="@string/gender"
+                    app:set_type="gender"
+                    app:set_typevalue="gender"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/emnumber"
+                    app:set_key="@string/national"
+                    app:set_type="country"
+                    app:set_typevalue="national"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    style="@style/settingsSelection"
+                    android:id="@+id/langs"
+                    app:set_key="@string/spokenlangs"
+                    app:set_type="input"
+                    app:set_typevalue="user.langs"
+                    />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    android:id="@+id/home"
+                    style="@style/settingsSelection"
+                    app:set_key="@string/home"
+                    app:set_type="input"
+                    app:set_typevalue="user.home" />
+
+                <com.blueobject.app.alive.ui.SettingsView
+                    app:set_key="@string/parentcontrol"
+                    app:set_type="pin"
+                    app:set_typevalue="user.pin"
+                    style="@style/settingsSelection"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

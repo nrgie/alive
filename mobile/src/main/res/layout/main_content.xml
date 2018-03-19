@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageButton
+            android:id="@+id/ta"
+            android:layout_width="326dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ta"
+            android:duplicateParentState="true"
+            android:elevation="6dp"
+            android:text="No Border"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/police"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="POLICE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/police"
+                app:cub_riple_effect="true"
+                app:cub_w="150"
+                app:textAllCaps="true" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/health"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="AMBULANCE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/health"
+                app:cub_riple_effect="true"
+                app:cub_w="150" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/fire"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="FIRE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/fire"
+                app:cub_riple_effect="true"
+                app:cub_w="150" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/policetext"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="POLICE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="150"
+                app:textAllCaps="true" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/healthtext"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="AMBULANCE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="150" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/firetext"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:text="FIRE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="150"
+                app:cub_hover_color="#ffffff"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="150" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/policecall"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:onClick="callPolice"
+                android:text="POLICE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="45"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/phone_ikon"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="45"
+                app:textAllCaps="true" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/healthcall"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:onClick="callAmb"
+                android:text="AMBULANCE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="45"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/phone_ikon"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="45" />
+
+            <com.blueobject.app.alive.CircleButton
+                android:id="@+id/firecall"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:onClick="callFire"
+                android:text="FIRE"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                app:cub_border_color="#ffffff"
+                app:cub_border_radius="3dp"
+                app:cub_color="#00ffffff"
+                app:cub_h="45"
+                app:cub_hover_color="#ffffff"
+                app:cub_icon="@drawable/phone_ikon"
+                app:cub_riple_effect="true"
+                app:cub_setcall="true"
+                app:cub_w="45" />
+        </LinearLayout>
+
+        <com.blueobject.app.alive.CircleButton
+            android:id="@+id/sml"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:elevation="6dp"
+            android:gravity="center_horizontal"
+            android:text="EMERGENCY CALL"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            app:cub_border_color="#ffffff"
+            app:cub_border_radius="4dp"
+            app:cub_color="#00ffffff"
+            app:cub_h="260"
+            app:cub_hover_color="#ffffff"
+            app:cub_icon="@drawable/sos"
+            app:cub_riple_effect="true"
+            app:cub_w="260" />
+
+        <com.blueobject.app.alive.CircleButton
+            android:id="@+id/smltext"
+            android:onClick="callEmerg"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:elevation="6dp"
+            android:gravity="center_horizontal"
+            android:text="EMERGENCY CALL"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            app:cub_border_color="#ffffff"
+            app:cub_border_radius="4dp"
+            app:cub_color="#00ffffff"
+            app:cub_h="260"
+            app:cub_hover_color="#ffffff"
+            app:cub_riple_effect="true"
+            app:cub_w="260" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

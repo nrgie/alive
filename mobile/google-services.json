@@ -1,0 +1,223 @@
+{
+  "project_info": {
+    "project_number": "41317552830",
+    "firebase_url": "https://saveapp-9126d.firebaseio.com",
+    "project_id": "saveapp-9126d",
+    "storage_bucket": "saveapp-9126d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41317552830:android:ca82d54471699807",
+        "android_client_info": {
+          "package_name": "com.blueobject.app.alive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41317552830-v5k0cashskmuerapduqs6jgboc3nn46v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueobject.app.alive",
+            "certificate_hash": "5d0d921f57a6405a2d567fbce3627d878cb3fc80"
+          }
+        },
+        {
+          "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGXr52wUF_ERx_2i8AZ87q8GXHA8LYAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41317552830-d9ph8md89osd4cb7g1f09drsc8ec2h10.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueobject.saveme"
+              }
+            },
+            {
+              "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41317552830:android:04c42b32b4ffe28f",
+        "android_client_info": {
+          "package_name": "com.blueobject.app.alive.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41317552830-h183v9gttlun9go4tpkrdvnvb0v4q43r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueobject.app.alive.pro",
+            "certificate_hash": "5d0d921f57a6405a2d567fbce3627d878cb3fc80"
+          }
+        },
+        {
+          "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGXr52wUF_ERx_2i8AZ87q8GXHA8LYAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41317552830-d9ph8md89osd4cb7g1f09drsc8ec2h10.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueobject.saveme"
+              }
+            },
+            {
+              "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41317552830:android:b0aaafc3969ab6aa",
+        "android_client_info": {
+          "package_name": "com.blueobject.app.alive.full"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41317552830-4209rqrp532lanqkunbsgkrm2aunioiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueobject.app.alive.full",
+            "certificate_hash": "5d0d921f57a6405a2d567fbce3627d878cb3fc80"
+          }
+        },
+        {
+          "client_id": "41317552830-e3kamh83vnl8ots4bvoa8g7i9cuboqro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueobject.app.alive.full",
+            "certificate_hash": "2aac55d86f961b7873ba3892318da2170ea8adf4"
+          }
+        },
+        {
+          "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGXr52wUF_ERx_2i8AZ87q8GXHA8LYAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41317552830-d9ph8md89osd4cb7g1f09drsc8ec2h10.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueobject.saveme"
+              }
+            },
+            {
+              "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41317552830:android:16d7211f2fc55f6d",
+        "android_client_info": {
+          "package_name": "com.blueobject.app.alive.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41317552830-er6g9pnc3nnsev8260kt5531ohp7roh5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blueobject.app.alive.free",
+            "certificate_hash": "5d0d921f57a6405a2d567fbce3627d878cb3fc80"
+          }
+        },
+        {
+          "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxGXr52wUF_ERx_2i8AZ87q8GXHA8LYAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41317552830-d9ph8md89osd4cb7g1f09drsc8ec2h10.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueobject.saveme"
+              }
+            },
+            {
+              "client_id": "41317552830-bolqr7e76fbmonovb4th6n04t30odo8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

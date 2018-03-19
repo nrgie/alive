@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/WizardPageTitle"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="@string/myphone"
+            android:textAllCaps="true" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="15dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/phoneccp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true"
+                app:ccp_textSize="18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/phoneccp"
+                android:animateLayoutChanges="false">
+
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/myphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/myphone"
+                    android:inputType="number"
+                    android:textColor="#313131" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/footer_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_small">
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/BaseTheme.Button.Footer.Previous"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/save"
+                style="@style/BaseTheme.Button.Footer.Next"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
